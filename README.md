@@ -4,7 +4,7 @@ The authority plane: one zone's single writer, which owns that zone's truth and 
 
 ## What it is for
 
-A plane is a process with no networking. This one paces its tick with the harness's own wait, publishes entity state to the ring each tick, and leaves client transport and interest filtering to the fan-out edge that reads the ring. `gen/` holds vendored codegen output; regenerate it, never edit it.
+A plane is a process with no networking. This one paces its tick with the harness's own wait, integrates the zone's entities each tick through a state handle, publishes nothing to the ring yet, and leaves client transport and interest filtering to the fan-out edge that reads the ring. `gen/` holds vendored codegen output; regenerate it, never edit it.
 
 ## Build and run
 
@@ -15,4 +15,4 @@ cmake --build build
 
 ## Licence
 
-The source files carry `Apache-2.0` SPDX headers; the repository has no licence file.
+The files that carry an SPDX header say `Apache-2.0`; the repository has no licence file.
