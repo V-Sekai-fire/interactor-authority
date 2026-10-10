@@ -15,4 +15,4 @@ cmake --build build
 
 ## Licence
 
-The files that carry an SPDX header say `Apache-2.0`; the repository has no licence file.
+Apache-2.0. See [LICENSE](LICENSE).
